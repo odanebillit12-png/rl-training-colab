@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+anthropic
+openai
+requests
+beautifulsoup4
+pydantic
+noise
+Pillow
+numpy

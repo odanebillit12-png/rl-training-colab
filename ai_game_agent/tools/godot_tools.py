@@ -1,0 +1,240 @@
+"""
+Godot 4 tools — generate GDScript, build .tscn scenes, scaffold full projects.
+"""
+from __future__ import annotations
+import json, os, re, textwrap
+from pathlib import Path
+from typing import Optional
+from ai_game_agent.config import GODOT_PROJECT, GENERATED_GAMES, TEMPLATES_DIR
+
+
+# ──────────────────────────────────────────────────────────────────────────────
+# GDScript generation helpers
+# ──────────────────────────────────────────────────────────────────────────────
+
+def write_script(project_path: Path, script_path: str, code: str) -> Path:
+    """Write GDScript code to the project. Returns absolute path."""
+    full = project_path / script_path
+    full.parent.mkdir(parents=True, exist_ok=True)
+    full.write_text(code, encoding="utf-8")
+    return full
+
+
+def build_player_script(game_type: str = "rpg") -> str:
+    """Return a complete Godot 4 player controller script for the given game type."""
+    if game_type == "platformer":
+        return textwrap.dedent("""\
+            extends CharacterBody2D
+            class_name Player
+
+            @export var speed: float = 200.0
+            @export var jump_force: float = 500.0
+            @export var max_hp: int = 100
+
+            var hp: int = max_hp
+            var is_dead: bool = false
+
+            @onready var anim: AnimatedSprite2D = $AnimatedSprite2D
+
+            const GRAVITY: float = 980.0
+
+            func _physics_process(delta: float) -> void:
+                if is_dead:
+                    return
+                velocity.y += GRAVITY * delta
+                var dir := Input.get_axis("move_left", "move_right")
+                velocity.x = dir * speed
+                if Input.is_action_just_pressed("jump") and is_on_floor():
+                    velocity.y = -jump_force
+                _update_animation(dir)
+                move_and_slide()
+
+            func _update_animation(dir: float) -> void:
+                if not is_on_floor():
+                    anim.play("jump")
+                elif dir != 0.0:
+                    anim.play("run")
+                    anim.flip_h = dir < 0.0
+                else:
+                    anim.play("idle")
+
+            func take_damage(amount: int) -> void:
+                hp = max(0, hp - amount)
+                if hp == 0:
+                    _die()
+
+            func _die() -> void:
+                is_dead = true
+                anim.play("death")
+        """)
+    else:  # rpg / sandbox top-down
+        return textwrap.dedent("""\
+            extends CharacterBody2D
+            class_name Player
+
+            @export var speed: float = 160.0
+            @export var max_hp: int = 100
+            @export var max_mp: int = 50
+
+            var hp: int = max_hp
+            var mp: int = max_mp
+            var gold: int = 0
+            var facing: Vector2 = Vector2.DOWN
+
+            @onready var anim: AnimatedSprite2D = $AnimatedSprite2D
+
+            signal stats_changed(hp, mp, gold)
+            signal interacted(target)
+
+            func _physics_process(_delta: float) -> void:
+                var dir := Vector2(
+                    Input.get_axis("move_left", "move_right"),
+                    Input.get_axis("move_up",   "move_down")
+                ).normalized()
+                velocity = dir * speed
+                if dir != Vector2.ZERO:
+                    facing = dir
+                _update_animation(dir)
+                move_and_slide()
+                if Input.is_action_just_pressed("interact"):
+                    _try_interact()
+
+            func _update_animation(dir: Vector2) -> void:
+                if dir == Vector2.ZERO:
+                    anim.play("idle_" + _facing_name())
+                else:
+                    anim.play("walk_" + _facing_name())
+
+            func _facing_name() -> String:
+                if abs(facing.x) > abs(facing.y):
+                    return "side"
+                return "down" if facing.y > 0 else "up"
+
+            func _try_interact() -> void:
+                var space := get_world_2d().direct_space_state
+                var query := PhysicsRayQueryParameters2D.create(
+                    global_position,
+                    global_position + facing * 40.0
+                )
+                var hit := space.intersect_ray(query)
+                if hit and hit.collider:
+                    interacted.emit(hit.collider)
+
+            func take_damage(amount: int) -> void:
+                hp = max(0, hp - amount)
+                stats_changed.emit(hp, mp, gold)
+
+            func heal(amount: int) -> void:
+                hp = min(max_hp, hp + amount)
+                stats_changed.emit(hp, mp, gold)
+
+            func add_gold(amount: int) -> void:
+                gold += amount
+                stats_changed.emit(hp, mp, gold)
+        """)
+
+
+def build_project_godot(project_name: str, settings: dict) -> str:
+    """Generate a project.godot file content."""
+    lines = [
+        "; Engine configuration file.",
+        f"; Generated by AI Game Agent for: {project_name}",
+        "",
+        "[application]",
+        f'config/name="{project_name}"',
+        'run/main_scene="res://scenes/main.tscn"',
+        "config/features=PackedStringArray(\"4.3\", \"Forward Plus\")",
+        "",
+        "[display]",
+    ]
+    w = settings.get("display/window/size/viewport_width", 1280)
+    h = settings.get("display/window/size/viewport_height", 720)
+    lines += [
+        f"window/size/viewport_width={w}",
+        f"window/size/viewport_height={h}",
+        "",
+    ]
+    if settings.get("physics/2d/default_gravity", 980) == 0:
+        lines += ["[physics]", "2d/default_gravity=0", ""]
+    lines += [
+        "[input]",
+        'ui_accept={',
+        ' "deadzone": 0.5,',
+        ' "events": [Object(InputEventKey,\"resource_local_to_scene\":false,\"resource_name\":\"\",\"device\":-1,\"window_id\":0,\"alt_pressed\":false,\"shift_pressed\":false,\"ctrl_pressed\":false,\"meta_pressed\":false,\"pressed\":false,\"keycode\":4194309,\"physical_keycode\":0,\"key_label\":0,\"unicode\":0,\"location\":0,\"echo\":false,\"script\":null)]',
+        "}",
+    ]
+    return "\n".join(lines)
+
+
+def build_main_scene(template: dict) -> str:
+    """Generate a minimal main.tscn GDScene file from template data."""
+    children_str = ""
+    for child_name in template["scenes"][0].get("children", []):
+        children_str += f'\n[node name="{child_name}" type="Node2D" parent="."]\n'
+    return textwrap.dedent(f"""\
+        [gd_scene load_steps=1 format=3]
+
+        [node name="Main" type="Node2D"]
+        {children_str}
+    """)
+
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Full project scaffolder
+# ──────────────────────────────────────────────────────────────────────────────
+
+def scaffold_project(game_name: str, game_type: str = "rpg", extra_scripts: Optional[dict[str, str]] = None) -> Path:
+    """
+    Create a full Godot 4 project folder under generated_games/.
+    Returns the project root path.
+    """
+    safe_name = re.sub(r"[^a-zA-Z0-9_]", "_", game_name).lower()
+    project_dir = GENERATED_GAMES / safe_name
+    project_dir.mkdir(parents=True, exist_ok=True)
+    (project_dir / "scenes").mkdir(exist_ok=True)
+    (project_dir / "scripts").mkdir(exist_ok=True)
+    (project_dir / "assets" / "sprites").mkdir(parents=True, exist_ok=True)
+    (project_dir / "assets" / "tilesets").mkdir(exist_ok=True)
+
+    # Load template
+    tpl_path = TEMPLATES_DIR / f"{game_type}_template.json"
+    if not tpl_path.exists():
+        tpl_path = TEMPLATES_DIR / "rpg_template.json"
+    template = json.loads(tpl_path.read_text())
+
+    # project.godot
+    (project_dir / "project.godot").write_text(
+        build_project_godot(game_name, template.get("project_settings", {}))
+    )
+
+    # main scene
+    (project_dir / "scenes" / "main.tscn").write_text(build_main_scene(template))
+
+    # Player script
+    write_script(project_dir, "scripts/player.gd", build_player_script(game_type))
+
+    # Extra scripts from LLM
+    if extra_scripts:
+        for path, code in extra_scripts.items():
+            write_script(project_dir, path, code)
+
+    # .gdignore for assets folder (keeps Godot import clean)
+    (project_dir / "assets" / ".gdignore").write_text("")
+
+    print(f"[Scaffold] Project created: {project_dir}")
+    return project_dir
+
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Scene builder — inject a script into an existing project
+# ──────────────────────────────────────────────────────────────────────────────
+
+def inject_script(project_path: Path, script_path: str, code: str) -> str:
+    """Write / overwrite a GDScript file in an existing project."""
+    out = write_script(project_path, script_path, code)
+    return f"Written: {out}"
+
+
+def list_project_scripts(project_path: Path) -> list[str]:
+    """Return all .gd files in a project (relative paths)."""
+    return [str(p.relative_to(project_path)) for p in project_path.rglob("*.gd")]

@@ -1,0 +1,19 @@
+{
+  "total_episodes": 89,
+  "recent_scores": [
+    63.6,
+    71.6,
+    76.9,
+    50.2,
+    76.8,
+    55.7,
+    63.8,
+    69.9,
+    64.1,
+    52.9
+  ],
+  "rolling_avg": 64.55,
+  "best_score": 84.4,
+  "current_level": 3,
+  "current_level_name": "Game Characters"
+}

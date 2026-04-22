@@ -1,0 +1,28 @@
+{
+  "total_sessions": 8,
+  "total_episodes": 52,
+  "all_time_best": 84.4,
+  "current_target": 75.0,
+  "current_penalty_threshold": 45.15,
+  "episodes_per_session": 24,
+  "session_bests": [
+    81.0,
+    80.8,
+    73.3,
+    84.4,
+    76.9,
+    76.9,
+    76.9,
+    76.9
+  ],
+  "session_avgs": [
+    61.7,
+    52.3,
+    40.9,
+    64.5,
+    64.5,
+    64.5,
+    64.5,
+    64.5
+  ]
+}

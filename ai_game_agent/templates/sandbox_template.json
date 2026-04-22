@@ -1,0 +1,87 @@
+{
+  "type": "sandbox",
+  "name": "Sandbox / Colony Sim",
+  "description": "Top-down sandbox with building, resource gathering, villager AI and world simulation",
+  "scenes": [
+    {
+      "name": "Main",
+      "path": "scenes/main.tscn",
+      "root_type": "Node2D",
+      "children": [
+        "World",
+        "SimLoop",
+        "HUD"
+      ]
+    },
+    {
+      "name": "World",
+      "path": "scenes/world.tscn",
+      "root_type": "Node2D",
+      "children": [
+        "TileMapLayer",
+        "BiomeManager",
+        "ObjectLayer",
+        "VillagerLayer"
+      ]
+    },
+    {
+      "name": "Villager",
+      "path": "scenes/villager.tscn",
+      "root_type": "CharacterBody2D",
+      "children": [
+        "CollisionShape2D",
+        "AnimatedSprite2D",
+        "JobBrain",
+        "InventoryComp"
+      ]
+    },
+    {
+      "name": "Building",
+      "path": "scenes/building.tscn",
+      "root_type": "StaticBody2D",
+      "children": [
+        "Sprite2D",
+        "WorkStation",
+        "StorageComp"
+      ]
+    },
+    {
+      "name": "HUD",
+      "path": "scenes/hud.tscn",
+      "root_type": "CanvasLayer",
+      "children": [
+        "ResourcePanel",
+        "TimeWidget",
+        "MiniMap",
+        "BuildMenu"
+      ]
+    }
+  ],
+  "scripts": [
+    "scripts/world_simulation.gd",
+    "scripts/villager_brain.gd",
+    "scripts/job_system.gd",
+    "scripts/resource_manager.gd",
+    "scripts/building_placer.gd",
+    "scripts/biome_world.gd",
+    "scripts/day_night_cycle.gd",
+    "scripts/population_system.gd"
+  ],
+  "input_actions": {
+    "move_camera_up": "W",
+    "move_camera_down": "S",
+    "move_camera_left": "A",
+    "move_camera_right": "D",
+    "zoom_in": "Mouse Wheel Up",
+    "zoom_out": "Mouse Wheel Down",
+    "place_building": "Mouse Left",
+    "cancel": "Escape",
+    "pause": "Space"
+  },
+  "project_settings": {
+    "display/window/size/viewport_width": 1920,
+    "display/window/size/viewport_height": 1080,
+    "rendering/2d/snap/snap_2d_transforms_to_pixel": true,
+    "physics/2d/default_gravity": 0
+  }
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "episode": 1,
+    "level": 1,
+    "level_name": "First Pixels",
+    "task_name": "water_tile",
+    "action": "create_tile",
+    "prompt_used": "blue water tile, pixel art, simple ripple pattern",
+    "score": 72.6,
+    "breakdown": {
+      "overall": 72.6,
+      "colour_count": 129,
+      "colour_score": 62.5,
+      "contrast_score": 64.4,
+      "edge_score": 100.0
+    },
+    "image_path": "training_data/pixellab_art/ep0001_L1_water_tile.png",
+    "penalty": false,
+    "reward": true
+  },
+  {
+    "episode": 2,
+    "level": 4,
+    "level_name": "Detail & Props",
+    "task_name": "archer",
+    "action": "create_character",
+    "prompt_used": "pixel art RPG archer ranger, bow and quiver, green cloak, top-down facing south, 32x32, detailed, clean edges, vibrant colours, distinct silhouette",
+    "score": 50.0,
+    "breakdown": {
+      "overall": 50.0,
+      "note": "PIL unavailable \u2014 using default score"
+    },
+    "image_path": "",
+    "penalty": false,
+    "reward": false
+  }
+]

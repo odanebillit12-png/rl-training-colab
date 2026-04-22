@@ -1,0 +1,76 @@
+{
+  "type": "platformer",
+  "name": "2D Platformer",
+  "description": "Side-scrolling platformer with physics, enemies, and collectibles",
+  "scenes": [
+    {
+      "name": "Main",
+      "path": "scenes/main.tscn",
+      "root_type": "Node2D",
+      "children": [
+        "Level",
+        "HUD"
+      ]
+    },
+    {
+      "name": "Level",
+      "path": "scenes/level.tscn",
+      "root_type": "Node2D",
+      "children": [
+        "TileMapLayer",
+        "Enemies",
+        "Collectibles",
+        "Hazards"
+      ]
+    },
+    {
+      "name": "Player",
+      "path": "scenes/player.tscn",
+      "root_type": "CharacterBody2D",
+      "children": [
+        "CollisionShape2D",
+        "AnimatedSprite2D",
+        "Camera2D"
+      ]
+    },
+    {
+      "name": "Enemy",
+      "path": "scenes/enemy.tscn",
+      "root_type": "CharacterBody2D",
+      "children": [
+        "CollisionShape2D",
+        "AnimatedSprite2D",
+        "PatrolArea"
+      ]
+    },
+    {
+      "name": "HUD",
+      "path": "scenes/hud.tscn",
+      "root_type": "CanvasLayer",
+      "children": [
+        "LivesLabel",
+        "ScoreLabel",
+        "HealthBar"
+      ]
+    }
+  ],
+  "scripts": [
+    "scripts/player.gd",
+    "scripts/enemy_patrol.gd",
+    "scripts/level_manager.gd",
+    "scripts/collectible.gd",
+    "scripts/camera_follow.gd"
+  ],
+  "input_actions": {
+    "move_left": "A / Left",
+    "move_right": "D / Right",
+    "jump": "Space / W / Up",
+    "attack": "Z / J",
+    "dash": "Shift"
+  },
+  "project_settings": {
+    "display/window/size/viewport_width": 1280,
+    "display/window/size/viewport_height": 720,
+    "physics/2d/default_gravity": 980
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "type": "rpg",
+  "name": "Top-Down RPG",
+  "description": "2D top-down RPG with world map, combat, inventory, and NPCs",
+  "scenes": [
+    {
+      "name": "Main",
+      "path": "scenes/main.tscn",
+      "root_type": "Node2D",
+      "children": [
+        "World",
+        "HUD",
+        "Camera2D"
+      ]
+    },
+    {
+      "name": "World",
+      "path": "scenes/world.tscn",
+      "root_type": "Node2D",
+      "children": [
+        "TileMapLayer",
+        "NPCSpawner",
+        "ObjectLayer"
+      ]
+    },
+    {
+      "name": "Player",
+      "path": "scenes/player.tscn",
+      "root_type": "CharacterBody2D",
+      "children": [
+        "CollisionShape2D",
+        "AnimatedSprite2D",
+        "Camera2D"
+      ]
+    },
+    {
+      "name": "NPC",
+      "path": "scenes/npc.tscn",
+      "root_type": "CharacterBody2D",
+      "children": [
+        "CollisionShape2D",
+        "AnimatedSprite2D",
+        "DialogueTrigger"
+      ]
+    },
+    {
+      "name": "BattleScreen",
+      "path": "scenes/battle.tscn",
+      "root_type": "CanvasLayer",
+      "children": [
+        "Background",
+        "PlayerPanel",
+        "EnemyPanel",
+        "ActionMenu"
+      ]
+    },
+    {
+      "name": "HUD",
+      "path": "scenes/hud.tscn",
+      "root_type": "CanvasLayer",
+      "children": [
+        "HPBar",
+        "MPBar",
+        "GoldLabel",
+        "MinimapPanel"
+      ]
+    }
+  ],
+  "scripts": [
+    "scripts/player.gd",
+    "scripts/npc.gd",
+    "scripts/battle_system.gd",
+    "scripts/inventory.gd",
+    "scripts/quest_manager.gd",
+    "scripts/dialogue_manager.gd",
+    "scripts/world_map.gd",
+    "scripts/save_system.gd"
+  ],
+  "input_actions": {
+    "move_up": "W / Up",
+    "move_down": "S / Down",
+    "move_left": "A / Left",
+    "move_right": "D / Right",
+    "interact": "E",
+    "inventory": "I",
+    "map": "M",
+    "attack": "Space"
+  },
+  "project_settings": {
+    "display/window/size/viewport_width": 1280,
+    "display/window/size/viewport_height": 720,
+    "rendering/2d/snap/snap_2d_transforms_to_pixel": true,
+    "physics/2d/default_gravity": 0
+  }
+}

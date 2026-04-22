@@ -1,0 +1,386 @@
+[
+  {
+    "episode_id": "ep_1776797528718",
+    "timestamp": 1776797528.718493,
+    "action_type": "draw_character",
+    "action_params": {
+      "archetype": "warrior",
+      "direction": "south",
+      "size": 32
+    },
+    "output_summary": "draw_character {'archetype': 'warrior', 'direction': 'south', 'size': 32}",
+    "pixel_art_score": 94.0,
+    "code_score": 50.0,
+    "design_score": 15.0,
+    "total_score": 75.55,
+    "penalties": [],
+    "bonuses": [
+      "[Art] Good colour count (6)",
+      "[Art] Excellent palette adherence",
+      "[Art] Clean edges",
+      "[Design] Has player character"
+    ],
+    "lesson": "Good output (76/100) \u2014 keep similar approach"
+  },
+  {
+    "episode_id": "ep_1776797529224",
+    "timestamp": 1776797529.224912,
+    "action_type": "generate_enemy_code",
+    "action_params": {
+      "complexity": "hard"
+    },
+    "output_summary": "generate_enemy_code",
+    "pixel_art_score": 50.0,
+    "code_score": 67.0,
+    "design_score": 65.0,
+    "total_score": 64.5,
+    "penalties": [],
+    "bonuses": [
+      "[Code] Substantial code (78 lines)",
+      "[Code] Proper class extension",
+      "[Code] Named class",
+      "[Code] Uses signals",
+      "[Code] Uses exports for editor config",
+      "[Code] Has physics nodes",
+      "[Code] Uses scene tree",
+      "[Code] Has game stats",
+      "[Code] Uses enums for state",
+      "[Code] Has _ready",
+      "[Code] Has update loop",
+      "[Design] Has player character",
+      "[Design] Has enemies/NPCs",
+      "[Design] Has lose/death condition",
+      "[Design] Has progression",
+      "[Design] Has items/inventory"
+    ],
+    "lesson": "Good output (64/100) \u2014 keep similar approach"
+  },
+  {
+    "episode_id": "ep_1776797529728",
+    "timestamp": 1776797529.728841,
+    "action_type": "design_game",
+    "action_params": {
+      "genre": "isekai_rpg",
+      "complexity": "full"
+    },
+    "output_summary": "design_game",
+    "pixel_art_score": 50.0,
+    "code_score": 47.0,
+    "design_score": 85.0,
+    "total_score": 62.5,
+    "penalties": [
+      "[Design] Extends bare Node \u2014 no game structure",
+      "[Design] Empty script body"
+    ],
+    "bonuses": [
+      "[Code] Substantial code (102 lines)",
+      "[Code] Proper class extension",
+      "[Code] Named class",
+      "[Code] Uses signals",
+      "[Code] Has save/load",
+      "[Code] Has game stats",
+      "[Code] Has _ready",
+      "[Code] Has update loop",
+      "[Design] Has player character",
+      "[Design] Has enemies/NPCs",
+      "[Design] Has win condition",
+      "[Design] Has lose/death condition",
+      "[Design] Has progression",
+      "[Design] Has UI elements",
+      "[Design] Has world/map design",
+      "[Design] Has items/inventory"
+    ],
+    "lesson": "Good output (62/100) \u2014 keep similar approach"
+  },
+  {
+    "episode_id": "ep_1776797530233",
+    "timestamp": 1776797530.2338428,
+    "action_type": "design_game",
+    "action_params": {
+      "genre": "isekai_rpg",
+      "complexity": "full"
+    },
+    "output_summary": "design_game",
+    "pixel_art_score": 50.0,
+    "code_score": 47.0,
+    "design_score": 85.0,
+    "total_score": 62.5,
+    "penalties": [
+      "[Design] Extends bare Node \u2014 no game structure",
+      "[Design] Empty script body"
+    ],
+    "bonuses": [
+      "[Code] Substantial code (102 lines)",
+      "[Code] Proper class extension",
+      "[Code] Named class",
+      "[Code] Uses signals",
+      "[Code] Has save/load",
+      "[Code] Has game stats",
+      "[Code] Has _ready",
+      "[Code] Has update loop",
+      "[Design] Has player character",
+      "[Design] Has enemies/NPCs",
+      "[Design] Has win condition",
+      "[Design] Has lose/death condition",
+      "[Design] Has progression",
+      "[Design] Has UI elements",
+      "[Design] Has world/map design",
+      "[Design] Has items/inventory"
+    ],
+    "lesson": "Good output (62/100) \u2014 keep similar approach"
+  },
+  {
+    "episode_id": "ep_1776797530741",
+    "timestamp": 1776797530.7412128,
+    "action_type": "generate_enemy_code",
+    "action_params": {
+      "complexity": "hard"
+    },
+    "output_summary": "generate_enemy_code",
+    "pixel_art_score": 50.0,
+    "code_score": 67.0,
+    "design_score": 65.0,
+    "total_score": 64.5,
+    "penalties": [],
+    "bonuses": [
+      "[Code] Substantial code (78 lines)",
+      "[Code] Proper class extension",
+      "[Code] Named class",
+      "[Code] Uses signals",
+      "[Code] Uses exports for editor config",
+      "[Code] Has physics nodes",
+      "[Code] Uses scene tree",
+      "[Code] Has game stats",
+      "[Code] Uses enums for state",
+      "[Code] Has _ready",
+      "[Code] Has update loop",
+      "[Design] Has player character",
+      "[Design] Has enemies/NPCs",
+      "[Design] Has lose/death condition",
+      "[Design] Has progression",
+      "[Design] Has items/inventory"
+    ],
+    "lesson": "Good output (64/100) \u2014 keep similar approach"
+  },
+  {
+    "episode_id": "ep_1776797531248",
+    "timestamp": 1776797531.248266,
+    "action_type": "generate_enemy_code",
+    "action_params": {
+      "complexity": "hard"
+    },
+    "output_summary": "generate_enemy_code",
+    "pixel_art_score": 50.0,
+    "code_score": 67.0,
+    "design_score": 65.0,
+    "total_score": 64.5,
+    "penalties": [],
+    "bonuses": [
+      "[Code] Substantial code (78 lines)",
+      "[Code] Proper class extension",
+      "[Code] Named class",
+      "[Code] Uses signals",
+      "[Code] Uses exports for editor config",
+      "[Code] Has physics nodes",
+      "[Code] Uses scene tree",
+      "[Code] Has game stats",
+      "[Code] Uses enums for state",
+      "[Code] Has _ready",
+      "[Code] Has update loop",
+      "[Design] Has player character",
+      "[Design] Has enemies/NPCs",
+      "[Design] Has lose/death condition",
+      "[Design] Has progression",
+      "[Design] Has items/inventory"
+    ],
+    "lesson": "Good output (64/100) \u2014 keep similar approach"
+  },
+  {
+    "episode_id": "ep_1776797531754",
+    "timestamp": 1776797531.754453,
+    "action_type": "generate_enemy_code",
+    "action_params": {
+      "complexity": "hard"
+    },
+    "output_summary": "generate_enemy_code",
+    "pixel_art_score": 50.0,
+    "code_score": 67.0,
+    "design_score": 65.0,
+    "total_score": 64.5,
+    "penalties": [],
+    "bonuses": [
+      "[Code] Substantial code (78 lines)",
+      "[Code] Proper class extension",
+      "[Code] Named class",
+      "[Code] Uses signals",
+      "[Code] Uses exports for editor config",
+      "[Code] Has physics nodes",
+      "[Code] Uses scene tree",
+      "[Code] Has game stats",
+      "[Code] Uses enums for state",
+      "[Code] Has _ready",
+      "[Code] Has update loop",
+      "[Design] Has player character",
+      "[Design] Has enemies/NPCs",
+      "[Design] Has lose/death condition",
+      "[Design] Has progression",
+      "[Design] Has items/inventory"
+    ],
+    "lesson": "Good output (64/100) \u2014 keep similar approach"
+  },
+  {
+    "episode_id": "ep_1776797532260",
+    "timestamp": 1776797532.2609138,
+    "action_type": "design_game",
+    "action_params": {
+      "genre": "isekai_rpg",
+      "complexity": "full"
+    },
+    "output_summary": "design_game",
+    "pixel_art_score": 50.0,
+    "code_score": 47.0,
+    "design_score": 85.0,
+    "total_score": 62.5,
+    "penalties": [
+      "[Design] Extends bare Node \u2014 no game structure",
+      "[Design] Empty script body"
+    ],
+    "bonuses": [
+      "[Code] Substantial code (102 lines)",
+      "[Code] Proper class extension",
+      "[Code] Named class",
+      "[Code] Uses signals",
+      "[Code] Has save/load",
+      "[Code] Has game stats",
+      "[Code] Has _ready",
+      "[Code] Has update loop",
+      "[Design] Has player character",
+      "[Design] Has enemies/NPCs",
+      "[Design] Has win condition",
+      "[Design] Has lose/death condition",
+      "[Design] Has progression",
+      "[Design] Has UI elements",
+      "[Design] Has world/map design",
+      "[Design] Has items/inventory"
+    ],
+    "lesson": "Good output (62/100) \u2014 keep similar approach"
+  },
+  {
+    "episode_id": "ep_1776797532765",
+    "timestamp": 1776797532.76594,
+    "action_type": "design_game",
+    "action_params": {
+      "genre": "isekai_rpg",
+      "complexity": "full"
+    },
+    "output_summary": "design_game",
+    "pixel_art_score": 50.0,
+    "code_score": 47.0,
+    "design_score": 85.0,
+    "total_score": 62.5,
+    "penalties": [
+      "[Design] Extends bare Node \u2014 no game structure",
+      "[Design] Empty script body"
+    ],
+    "bonuses": [
+      "[Code] Substantial code (102 lines)",
+      "[Code] Proper class extension",
+      "[Code] Named class",
+      "[Code] Uses signals",
+      "[Code] Has save/load",
+      "[Code] Has game stats",
+      "[Code] Has _ready",
+      "[Code] Has update loop",
+      "[Design] Has player character",
+      "[Design] Has enemies/NPCs",
+      "[Design] Has win condition",
+      "[Design] Has lose/death condition",
+      "[Design] Has progression",
+      "[Design] Has UI elements",
+      "[Design] Has world/map design",
+      "[Design] Has items/inventory"
+    ],
+    "lesson": "Good output (62/100) \u2014 keep similar approach"
+  },
+  {
+    "episode_id": "ep_1776797533271",
+    "timestamp": 1776797533.271863,
+    "action_type": "generate_scene_code",
+    "action_params": {
+      "complexity": "medium"
+    },
+    "output_summary": "generate_scene_code",
+    "pixel_art_score": 50.0,
+    "code_score": 35.0,
+    "design_score": 75.0,
+    "total_score": 52.5,
+    "penalties": [],
+    "bonuses": [
+      "[Code] Substantial code (42 lines)",
+      "[Code] Proper class extension",
+      "[Code] Named class",
+      "[Code] Uses scene tree",
+      "[Code] Has game stats",
+      "[Code] Has _ready",
+      "[Design] Has player character",
+      "[Design] Has enemies/NPCs",
+      "[Design] Has lose/death condition",
+      "[Design] Has progression",
+      "[Design] Has UI elements",
+      "[Design] Has world/map design"
+    ],
+    "lesson": "Average output (52/100) \u2014 fix: needs improvement"
+  },
+  {
+    "episode_id": "ep_1776797533775",
+    "timestamp": 1776797533.7757518,
+    "action_type": "generate_scene_code",
+    "action_params": {
+      "complexity": "medium"
+    },
+    "output_summary": "generate_scene_code",
+    "pixel_art_score": 50.0,
+    "code_score": 35.0,
+    "design_score": 75.0,
+    "total_score": 52.5,
+    "penalties": [],
+    "bonuses": [
+      "[Code] Substantial code (42 lines)",
+      "[Code] Proper class extension",
+      "[Code] Named class",
+      "[Code] Uses scene tree",
+      "[Code] Has game stats",
+      "[Code] Has _ready",
+      "[Design] Has player character",
+      "[Design] Has enemies/NPCs",
+      "[Design] Has lose/death condition",
+      "[Design] Has progression",
+      "[Design] Has UI elements",
+      "[Design] Has world/map design"
+    ],
+    "lesson": "Average output (52/100) \u2014 fix: needs improvement"
+  },
+  {
+    "episode_id": "ep_1776797534289",
+    "timestamp": 1776797534.2893078,
+    "action_type": "draw_character",
+    "action_params": {
+      "archetype": "mage",
+      "all_directions": true,
+      "size": 32
+    },
+    "output_summary": "draw_character {'archetype': 'mage', 'all_directions': True, 'size': 32}",
+    "pixel_art_score": 94.0,
+    "code_score": 50.0,
+    "design_score": 15.0,
+    "total_score": 75.55,
+    "penalties": [],
+    "bonuses": [
+      "[Art] Good colour count (5)",
+      "[Art] Excellent palette adherence",
+      "[Art] Clean edges",
+      "[Design] Has player character"
+    ],
+    "lesson": "Good output (76/100) \u2014 keep similar approach"
+  }
+]

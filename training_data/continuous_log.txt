@@ -1,0 +1,459 @@
+
+🎮 AI DEV CONTINUOUS TRAINING
+   Resuming from session #8, all-time best: 84.4/100
+   Press Ctrl+C at any time to stop between sessions.
+
+
+=================================================================
+  🎮 AI DEV — CONTINUOUS TRAINING  |  Session #9
+  Current Grade: AAA+    ⚡ ADVANCED
+  Target this session: 75.0/100
+  Goal: AAAAA+ (95+/100) — Break every art barrier!
+=================================================================
+
+  📚 Resuming: 89 prior episodes, avg=64.5
+
+============================================================
+🎨 AI DEV — PIXEL ART TRAINING (Draw from Scratch)
+   Target : 75.0/100 (GOTY Level)
+   Episodes: 24
+   Output  : training_data/drawn_art
+============================================================
+
+
+============================================================
+🖊️  DRAWING TRAINING — AI Dev picks up the pencil
+============================================================
+
+
+── Episode 90 [Level 3: Game Characters] ──
+   Task    : hero_warrior (48×64)
+   Subject : a pixel art RPG hero warrior sprite facing south — sword at side, shie...
+   Rolling avg: 64.5/100
+   🔄 Rotating to GitHub PAT #2/2
+   🔄 Rotating to GitHub PAT #1/2
+   ⚠️  All 2 GitHub PAT(s) rate-limited
+   ⚠️  Groq rate-limited — retrying in 8s...
+   ⚠️  Groq rate-limited — retrying in 16s...
+   ⚠️  Groq rate-limited, trying Gemini...
+
+   ⏸  All APIs rate-limited (hit #1)
+   ⏸  Waiting 60s for quotas to reset...
+
+── Episode 90 [Level 3: Game Characters] ──
+   Task    : mage_character (48×64)
+   Subject : a pixel art mage character — blue/purple robes, pointed hat with star,...
+   Rolling avg: 64.5/100
+   🔄 Rotating to GitHub PAT #2/2
+   🔄 Rotating to GitHub PAT #1/2
+   ⚠️  All 2 GitHub PAT(s) rate-limited
+   ⚠️  Groq rate-limited — retrying in 8s...
+   ⚠️  Groq rate-limited — retrying in 16s...
+   ⚠️  Groq rate-limited, trying Gemini...
+
+   ⏸  All APIs rate-limited (hit #2)
+   ⏸  Waiting 120s for quotas to reset...
+
+── Episode 90 [Level 3: Game Characters] ──
+   Task    : slime_enemy (48×48)
+   Subject : a pixel art slime enemy sprite — round gelatinous body, cute anime-sty...
+   Rolling avg: 64.5/100
+   🔄 Rotating to GitHub PAT #2/2
+   🔄 Rotating to GitHub PAT #1/2
+   ⚠️  All 2 GitHub PAT(s) rate-limited
+   ⚠️  Groq rate-limited — retrying in 8s...
+   ⚠️  Groq rate-limited — retrying in 16s...
+   ⚠️  Groq rate-limited, trying Gemini...
+
+   ⏸  All APIs rate-limited (hit #3)
+   ⏸  Waiting 180s for quotas to reset...
+
+── Episode 90 [Level 3: Game Characters] ──
+   Task    : skeleton_enemy (48×64)
+   Subject : a pixel art skeleton enemy — bone armor, glowing eye sockets, cracked ...
+   Rolling avg: 64.5/100
+   🔄 Rotating to GitHub PAT #2/2
+   🔄 Rotating to GitHub PAT #1/2
+   ⚠️  All 2 GitHub PAT(s) rate-limited
+   🔄 Rotating to GitHub PAT #2/2
+   🔄 Rotating to GitHub PAT #1/2
+   ⚠️  All 2 GitHub PAT(s) rate-limited
+   ⚠️  Groq rate-limited — retrying in 8s...
+   ⚠️  Groq rate-limited — retrying in 16s...
+   ⚠️  Groq rate-limited, trying Gemini...
+
+   ⏸  All APIs rate-limited (hit #4)
+   ⏸  Waiting 240s for quotas to reset...
+
+── Episode 90 [Level 3: Game Characters] ──
+   Task    : hero_warrior (48×64)
+   Subject : a pixel art RPG hero warrior sprite facing south — sword at side, shie...
+   Rolling avg: 64.5/100
+   🔄 Rotating to GitHub PAT #2/2
+   🔄 Rotating to GitHub PAT #1/2
+   ⚠️  All 2 GitHub PAT(s) rate-limited
+   ⚠️  Groq rate-limited — retrying in 8s...
+   ⚠️  Groq rate-limited — retrying in 16s...
+   ⚠️  Groq rate-limited, trying Gemini...
+
+   ⏸  All APIs rate-limited (hit #5)
+   ⏸  Waiting 300s for quotas to reset...
+
+── Episode 90 [Level 3: Game Characters] ──
+   Task    : mage_character (48×64)
+   Subject : a pixel art mage character — blue/purple robes, pointed hat with star,...
+   Rolling avg: 64.5/100
+   🔄 Rotating to GitHub PAT #2/2
+   🔄 Rotating to GitHub PAT #1/2
+   ⚠️  All 2 GitHub PAT(s) rate-limited
+   ⚠️  Groq rate-limited — retrying in 8s...
+   ⚠️  Groq rate-limited — retrying in 16s...
+   ⚠️  Groq rate-limited, trying Gemini...
+
+   ⏸  All APIs rate-limited (hit #6)
+   ⏸  Waiting 300s for quotas to reset...
+
+── Episode 90 [Level 3: Game Characters] ──
+   Task    : slime_enemy (48×48)
+   Subject : a pixel art slime enemy sprite — round gelatinous body, cute anime-sty...
+   Rolling avg: 64.5/100
+   🔄 Rotating to GitHub PAT #2/2
+   🔄 Rotating to GitHub PAT #1/2
+   ⚠️  All 2 GitHub PAT(s) rate-limited
+   ⚠️  Groq rate-limited — retrying in 8s...
+   ⚠️  Groq rate-limited — retrying in 16s...
+   ⚠️  Groq rate-limited, trying Gemini...
+
+   ⏸  All APIs rate-limited (hit #7)
+   ⏸  Waiting 300s for quotas to reset...
+
+── Episode 90 [Level 3: Game Characters] ──
+   Task    : skeleton_enemy (48×64)
+   Subject : a pixel art skeleton enemy — bone armor, glowing eye sockets, cracked ...
+   Rolling avg: 64.5/100
+   🔄 Rotating to GitHub PAT #2/2
+   🔄 Rotating to GitHub PAT #1/2
+   ⚠️  All 2 GitHub PAT(s) rate-limited
+   🔄 Rotating to GitHub PAT #2/2
+   🔄 Rotating to GitHub PAT #1/2
+   ⚠️  All 2 GitHub PAT(s) rate-limited
+   ⚠️  Groq rate-limited — retrying in 8s...
+   ⚠️  Groq rate-limited — retrying in 16s...
+   ⚠️  Groq rate-limited, trying Gemini...
+
+   ⏸  All APIs rate-limited (hit #8)
+   ⏸  Waiting 300s for quotas to reset...
+
+── Episode 90 [Level 3: Game Characters] ──
+   Task    : hero_warrior (48×64)
+   Subject : a pixel art RPG hero warrior sprite facing south — sword at side, shie...
+   Rolling avg: 64.5/100
+   🔄 Rotating to GitHub PAT #2/2
+   🔄 Rotating to GitHub PAT #1/2
+   ⚠️  All 2 GitHub PAT(s) rate-limited
+   ⚠️  Groq rate-limited — retrying in 8s...
+   ⚠️  Groq rate-limited — retrying in 16s...
+   ⚠️  Groq rate-limited, trying Gemini...
+
+   ⏸  All APIs rate-limited (hit #9)
+   ⏸  Waiting 300s for quotas to reset...
+
+── Episode 90 [Level 3: Game Characters] ──
+   Task    : mage_character (48×64)
+   Subject : a pixel art mage character — blue/purple robes, pointed hat with star,...
+   Rolling avg: 64.5/100
+   🔄 Rotating to GitHub PAT #2/2
+   🔄 Rotating to GitHub PAT #1/2
+   ⚠️  All 2 GitHub PAT(s) rate-limited
+   ⚠️  Groq rate-limited — retrying in 8s...
+   ⚠️  Groq rate-limited — retrying in 16s...
+   ⚠️  Groq rate-limited, trying Gemini...
+
+   ⏸  All APIs rate-limited (hit #10)
+   ⏸  Waiting 300s for quotas to reset...
+
+── Episode 90 [Level 3: Game Characters] ──
+   Task    : slime_enemy (48×48)
+   Subject : a pixel art slime enemy sprite — round gelatinous body, cute anime-sty...
+   Rolling avg: 64.5/100
+   🔄 Rotating to GitHub PAT #2/2
+   🔄 Rotating to GitHub PAT #1/2
+   ⚠️  All 2 GitHub PAT(s) rate-limited
+   ⚠️  Groq rate-limited — retrying in 8s...
+   ⚠️  Groq rate-limited — retrying in 16s...
+   ⚠️  Groq rate-limited, trying Gemini...
+
+   ⏸  All APIs rate-limited (hit #11)
+   ⏸  Waiting 300s for quotas to reset...
+
+── Episode 90 [Level 3: Game Characters] ──
+   Task    : skeleton_enemy (48×64)
+   Subject : a pixel art skeleton enemy — bone armor, glowing eye sockets, cracked ...
+   Rolling avg: 64.5/100
+   🔄 Rotating to GitHub PAT #2/2
+   🔄 Rotating to GitHub PAT #1/2
+   ⚠️  All 2 GitHub PAT(s) rate-limited
+   🔄 Rotating to GitHub PAT #2/2
+   🔄 Rotating to GitHub PAT #1/2
+   ⚠️  All 2 GitHub PAT(s) rate-limited
+   ⚠️  Groq rate-limited — retrying in 8s...
+   ⚠️  Groq rate-limited — retrying in 16s...
+   ⚠️  Groq rate-limited, trying Gemini...
+
+   ⏸  All APIs rate-limited (hit #12)
+   ⏸  Waiting 300s for quotas to reset...
+
+── Episode 90 [Level 3: Game Characters] ──
+   Task    : hero_warrior (48×64)
+   Subject : a pixel art RPG hero warrior sprite facing south — sword at side, shie...
+   Rolling avg: 64.5/100
+   🔄 Rotating to GitHub PAT #2/2
+   🔄 Rotating to GitHub PAT #1/2
+   ⚠️  All 2 GitHub PAT(s) rate-limited
+   ⚠️  Groq rate-limited — retrying in 8s...
+   ⚠️  Groq rate-limited — retrying in 16s...
+   ⚠️  Groq rate-limited, trying Gemini...
+
+   ⏸  All APIs rate-limited (hit #13)
+   ⏸  Waiting 300s for quotas to reset...
+
+── Episode 90 [Level 3: Game Characters] ──
+   Task    : mage_character (48×64)
+   Subject : a pixel art mage character — blue/purple robes, pointed hat with star,...
+   Rolling avg: 64.5/100
+   🔄 Rotating to GitHub PAT #2/2
+   🔄 Rotating to GitHub PAT #1/2
+   ⚠️  All 2 GitHub PAT(s) rate-limited
+   ⚠️  Groq rate-limited — retrying in 8s...
+   ⚠️  Groq rate-limited — retrying in 16s...
+   ⚠️  Groq rate-limited, trying Gemini...
+
+   ⏸  All APIs rate-limited (hit #14)
+   ⏸  Waiting 300s for quotas to reset...
+
+── Episode 90 [Level 3: Game Characters] ──
+   Task    : slime_enemy (48×48)
+   Subject : a pixel art slime enemy sprite — round gelatinous body, cute anime-sty...
+   Rolling avg: 64.5/100
+   🔄 Rotating to GitHub PAT #2/2
+   🔄 Rotating to GitHub PAT #1/2
+   ⚠️  All 2 GitHub PAT(s) rate-limited
+   ⚠️  Groq rate-limited — retrying in 8s...
+   ⚠️  Groq rate-limited — retrying in 16s...
+   ⚠️  Groq rate-limited, trying Gemini...
+
+   ⏸  All APIs rate-limited (hit #15)
+   ⏸  Waiting 300s for quotas to reset...
+
+── Episode 90 [Level 3: Game Characters] ──
+   Task    : skeleton_enemy (48×64)
+   Subject : a pixel art skeleton enemy — bone armor, glowing eye sockets, cracked ...
+   Rolling avg: 64.5/100
+   🔄 Rotating to GitHub PAT #2/2
+   🔄 Rotating to GitHub PAT #1/2
+   ⚠️  All 2 GitHub PAT(s) rate-limited
+   🔄 Rotating to GitHub PAT #2/2
+   🔄 Rotating to GitHub PAT #1/2
+   ⚠️  All 2 GitHub PAT(s) rate-limited
+   ⚠️  Groq rate-limited — retrying in 8s...
+   ⚠️  Groq rate-limited — retrying in 16s...
+   ⚠️  Groq rate-limited, trying Gemini...
+
+   ⏸  All APIs rate-limited (hit #16)
+   ⏸  Waiting 300s for quotas to reset...
+
+── Episode 90 [Level 3: Game Characters] ──
+   Task    : hero_warrior (48×64)
+   Subject : a pixel art RPG hero warrior sprite facing south — sword at side, shie...
+   Rolling avg: 64.5/100
+   🔄 Rotating to GitHub PAT #2/2
+   🔄 Rotating to GitHub PAT #1/2
+   ⚠️  All 2 GitHub PAT(s) rate-limited
+   ⚠️  Groq rate-limited — retrying in 8s...
+   ⚠️  Groq rate-limited — retrying in 16s...
+   ⚠️  Groq rate-limited, trying Gemini...
+
+   ⏸  All APIs rate-limited (hit #17)
+   ⏸  Waiting 300s for quotas to reset...
+
+── Episode 90 [Level 3: Game Characters] ──
+   Task    : mage_character (48×64)
+   Subject : a pixel art mage character — blue/purple robes, pointed hat with star,...
+   Rolling avg: 64.5/100
+   🔄 Rotating to GitHub PAT #2/2
+   🔄 Rotating to GitHub PAT #1/2
+   ⚠️  All 2 GitHub PAT(s) rate-limited
+   ⚠️  Groq rate-limited — retrying in 8s...
+   ⚠️  Groq rate-limited — retrying in 16s...
+   ⚠️  Groq rate-limited, trying Gemini...
+
+   ⏸  All APIs rate-limited (hit #18)
+   ⏸  Waiting 300s for quotas to reset...
+
+── Episode 90 [Level 3: Game Characters] ──
+   Task    : slime_enemy (48×48)
+   Subject : a pixel art slime enemy sprite — round gelatinous body, cute anime-sty...
+   Rolling avg: 64.5/100
+   🔄 Rotating to GitHub PAT #2/2
+   🔄 Rotating to GitHub PAT #1/2
+   ⚠️  All 2 GitHub PAT(s) rate-limited
+   ⚠️  Groq rate-limited — retrying in 8s...
+   ⚠️  Groq rate-limited — retrying in 16s...
+   ⚠️  Groq rate-limited, trying Gemini...
+
+   ⏸  All APIs rate-limited (hit #19)
+   ⏸  Waiting 300s for quotas to reset...
+
+── Episode 90 [Level 3: Game Characters] ──
+   Task    : skeleton_enemy (48×64)
+   Subject : a pixel art skeleton enemy — bone armor, glowing eye sockets, cracked ...
+   Rolling avg: 64.5/100
+   🔄 Rotating to GitHub PAT #2/2
+   🔄 Rotating to GitHub PAT #1/2
+   ⚠️  All 2 GitHub PAT(s) rate-limited
+   🔄 Rotating to GitHub PAT #2/2
+   🔄 Rotating to GitHub PAT #1/2
+   ⚠️  All 2 GitHub PAT(s) rate-limited
+   ⚠️  Groq rate-limited — retrying in 8s...
+   ⚠️  Groq rate-limited — retrying in 16s...
+   ⚠️  Groq rate-limited, trying Gemini...
+
+   ⏸  All APIs rate-limited (hit #20)
+   ⏸  Waiting 300s for quotas to reset...
+
+── Episode 90 [Level 3: Game Characters] ──
+   Task    : hero_warrior (48×64)
+   Subject : a pixel art RPG hero warrior sprite facing south — sword at side, shie...
+   Rolling avg: 64.5/100
+   🔄 Rotating to GitHub PAT #2/2
+   🔄 Rotating to GitHub PAT #1/2
+   ⚠️  All 2 GitHub PAT(s) rate-limited
+   ⚠️  Groq rate-limited — retrying in 8s...
+   ⚠️  Groq rate-limited — retrying in 16s...
+   ⚠️  Groq rate-limited, trying Gemini...
+
+   ⏸  All APIs rate-limited (hit #21)
+   ⏸  Waiting 300s for quotas to reset...
+
+── Episode 90 [Level 3: Game Characters] ──
+   Task    : mage_character (48×64)
+   Subject : a pixel art mage character — blue/purple robes, pointed hat with star,...
+   Rolling avg: 64.5/100
+   🔄 Rotating to GitHub PAT #2/2
+   🔄 Rotating to GitHub PAT #1/2
+   ⚠️  All 2 GitHub PAT(s) rate-limited
+   ⚠️  Groq rate-limited — retrying in 8s...
+   ⚠️  Groq rate-limited — retrying in 16s...
+   ⚠️  Groq rate-limited, trying Gemini...
+
+   ⏸  All APIs rate-limited (hit #22)
+   ⏸  Waiting 300s for quotas to reset...
+
+── Episode 90 [Level 3: Game Characters] ──
+   Task    : slime_enemy (48×48)
+   Subject : a pixel art slime enemy sprite — round gelatinous body, cute anime-sty...
+   Rolling avg: 64.5/100
+   🔄 Rotating to GitHub PAT #2/2
+   🔄 Rotating to GitHub PAT #1/2
+   ⚠️  All 2 GitHub PAT(s) rate-limited
+   ⚠️  Groq rate-limited — retrying in 8s...
+   ⚠️  Groq rate-limited — retrying in 16s...
+   ⚠️  Groq rate-limited, trying Gemini...
+
+   ⏸  All APIs rate-limited (hit #23)
+   ⏸  Waiting 300s for quotas to reset...
+
+── Episode 90 [Level 3: Game Characters] ──
+   Task    : skeleton_enemy (48×64)
+   Subject : a pixel art skeleton enemy — bone armor, glowing eye sockets, cracked ...
+   Rolling avg: 64.5/100
+   🔄 Rotating to GitHub PAT #2/2
+   🔄 Rotating to GitHub PAT #1/2
+   ⚠️  All 2 GitHub PAT(s) rate-limited
+   🔄 Rotating to GitHub PAT #2/2
+   🔄 Rotating to GitHub PAT #1/2
+   ⚠️  All 2 GitHub PAT(s) rate-limited
+   ⚠️  Groq rate-limited — retrying in 8s...
+   ⚠️  Groq rate-limited — retrying in 16s...
+   ⚠️  Groq rate-limited, trying Gemini...
+
+   ⏸  All APIs rate-limited (hit #24)
+   ⏸  Waiting 300s for quotas to reset...
+
+============================================================
+🎨 TRAINING COMPLETE
+   Episodes   : 0 new  (89 total)
+   Avg Score  : 64.5/100
+   Best Score : 76.9/100
+   Level      : 3 — Game Characters
+   Art saved  : training_data/drawn_art/
+
+  🎮 SESSION RANK: A+ — 🌱 BEGINNER+
+  💬 Coach says: Basic shapes working. Now add depth layers.
+  🏆 Personal best this session: 0.0/100
+  🔥 Best win streak: 0 episodes
+============================================================
+
+
+  ⏸  Session produced 0 drawings — not counting, retrying...
+
+─────────────────────────────────────────────────────────────────
+  ✅ SESSION #8 COMPLETE
+     This session avg : 64.5/100
+     All-time best    : 84.4/100
+     Current grade    : AAA+    ⚡ ADVANCED
+     Next target      : 75.0/100
+     Total episodes   : 52
+─────────────────────────────────────────────────────────────────
+
+  ⏳ Next session starts in 5 seconds... (Ctrl+C to stop)
+
+=================================================================
+  🎮 AI DEV — CONTINUOUS TRAINING  |  Session #9
+  Current Grade: AAA+    ⚡ ADVANCED
+  Target this session: 75.0/100
+  Goal: AAAAA+ (95+/100) — Break every art barrier!
+=================================================================
+
+  📚 Resuming: 89 prior episodes, avg=64.5
+
+============================================================
+🎨 AI DEV — PIXEL ART TRAINING (Draw from Scratch)
+   Target : 75.0/100 (GOTY Level)
+   Episodes: 24
+   Output  : training_data/drawn_art
+============================================================
+
+
+============================================================
+🖊️  DRAWING TRAINING — AI Dev picks up the pencil
+============================================================
+
+
+── Episode 90 [Level 3: Game Characters] ──
+   Task    : hero_warrior (48×64)
+   Subject : a pixel art RPG hero warrior sprite facing south — sword at side, shie...
+   Rolling avg: 64.5/100
+   🔄 Rotating to GitHub PAT #2/2
+   🔄 Rotating to GitHub PAT #1/2
+   ⚠️  All 2 GitHub PAT(s) rate-limited
+   ⚠️  Groq rate-limited — retrying in 8s...
+   ⚠️  Groq rate-limited — retrying in 16s...
+   ⚠️  Groq rate-limited, trying Gemini...
+
+   ⏸  All APIs rate-limited (hit #1)
+   ⏸  Waiting 60s for quotas to reset...
+
+── Episode 90 [Level 3: Game Characters] ──
+   Task    : mage_character (48×64)
+   Subject : a pixel art mage character — blue/purple robes, pointed hat with star,...
+   Rolling avg: 64.5/100
+   🔄 Rotating to GitHub PAT #2/2
+   🔄 Rotating to GitHub PAT #1/2
+   ⚠️  All 2 GitHub PAT(s) rate-limited
+   ⚠️  Groq rate-limited — retrying in 8s...
+   ⚠️  Groq rate-limited — retrying in 16s...
+   ⚠️  Groq rate-limited, trying Gemini...
+
+   ⏸  All APIs rate-limited (hit #2)
+   ⏸  Waiting 120s for quotas to reset...
